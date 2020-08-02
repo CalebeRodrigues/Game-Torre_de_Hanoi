@@ -8,9 +8,17 @@ namespace Torre_de_Hanói
 {
     class Torre3 : Torres
     {
-        public override void update()
+        public override void update(int position)
         {
-            throw new NotImplementedException();
+            if(base.NPecas == 0)
+            {
+                base.setPeca(base.disco.getIDPeca());
+            }
+        }
+
+        public void scannerTorre()
+        {
+
         }
     }
 }

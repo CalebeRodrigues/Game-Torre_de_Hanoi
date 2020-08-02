@@ -8,7 +8,8 @@ namespace Torre_de_Hanói
 {
     public abstract class Disco 
     {
-        private int IDPeca;
+        protected int IDPeca;
+        protected int Position;
         
         public Disco()
         {
@@ -25,7 +26,7 @@ namespace Torre_de_Hanói
             return IDPeca;
         }
 
-        public abstract void Mover();
+        public abstract void Mover(int position);
          
     }
 }
