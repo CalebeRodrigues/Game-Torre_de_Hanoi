@@ -14,9 +14,12 @@ namespace Torre_de_Hanói
 
         }
 
-        public override void Mover(int position)
+        public override void Mover(int position, int[] peca, int NPeca)
         {
-            throw new NotImplementedException();
+            if(NPeca != 0)
+            {
+                new DomainExceptions("Impossivel mover a peça para essa posição!");
+            }
         }
     }
 }

@@ -30,13 +30,37 @@ namespace Torre_de_Hanói
             return IDTorre;
         }
 
-        public void setPeca(int peca)
+        public void addPeca(int peca)
         {
-            if (NPecas < 3)
+            try
             {
-                this.peca[NPecas] = peca;
-                NPecas++;
+                disco.Mover(IDTorre, this.peca, NPecas);
+                if (NPecas < 3)
+                {
+                    this.peca[NPecas] = peca;
+                    NPecas++;
+                }
             }
+            catch(DomainExceptions e)
+            {
+                new DomainExceptions(e.ToString());
+            }
+        }
+
+        public void removePeca(int peca)
+        {
+            int n = 0;
+
+            for(int i = 0; i < 3; i++)
+            {
+                if(this.peca[i] == peca)
+                {
+                    n = i;
+                }
+            }
+
+            this.peca[n] = 0;
+            NPecas--;
         }
 
         public abstract void update(int position);

@@ -14,9 +14,9 @@ namespace Torre_de_Hanói
 
         }
 
-        public override void Mover(int position)
+        public override void Mover(int position, int[] peca, int NPeca)
         {
-
+            
         }
     }
 }

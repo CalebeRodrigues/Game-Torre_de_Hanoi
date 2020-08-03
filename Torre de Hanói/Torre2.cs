@@ -10,9 +10,9 @@ namespace Torre_de_Hanói
     {
         public override void update(int position)
         {
-            if (base.NPecas == 0)
+            if (NPecas == 0)
             {
-                base.setPeca(base.disco.getIDPeca());
+                addPeca(disco.getIDPeca());
             }
         }
     }

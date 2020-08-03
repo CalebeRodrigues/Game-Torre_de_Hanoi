@@ -26,7 +26,6 @@ namespace Torre_de_Hanói
             return IDPeca;
         }
 
-        public abstract void Mover(int position);
-         
+        public abstract void Mover(int position, int[] peca, int NPeca);
     }
 }
