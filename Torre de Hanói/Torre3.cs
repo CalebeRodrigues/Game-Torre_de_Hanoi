@@ -8,6 +8,8 @@ namespace Torre_de_Hanói
 {
     class Torre3 : Torres
     {
+        private int[] gabarito = { 3, 2, 1 };
+
         public override void update(int position)
         {
             if(NPecas == 0)
@@ -16,9 +18,12 @@ namespace Torre_de_Hanói
             }
         }
 
-        public void scannerTorre()
+        public override void scannerTorre()
         {
-
+            if (peca.Equals(gabarito))
+            {
+                new EndGame("Fim de jogo!");
+            }
         }
     }
 }

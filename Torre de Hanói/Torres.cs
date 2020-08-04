@@ -11,6 +11,7 @@ namespace Torre_de_Hanói
         protected int IDTorre;
         protected int NPecas = 0;
         protected int[] peca = new int[3];
+
         protected Disco disco;
 
 
@@ -64,6 +65,7 @@ namespace Torre_de_Hanói
         }
 
         public abstract void update(int position);
+        public virtual void scannerTorre(){}
 
     }
 }
