@@ -36,20 +36,23 @@
             // btnStart
             // 
             this.btnStart.BackColor = System.Drawing.Color.Transparent;
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Font = new System.Drawing.Font("Miriam Libre", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.Location = new System.Drawing.Point(18, 251);
             this.btnStart.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(391, 106);
             this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Start";
+            this.btnStart.Text = "Iniciar";
             this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnSair
             // 
             this.btnSair.BackColor = System.Drawing.Color.Transparent;
-            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Font = new System.Drawing.Font("Miriam Libre", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.Location = new System.Drawing.Point(409, 251);
             this.btnSair.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
@@ -58,6 +61,7 @@
             this.btnSair.TabIndex = 1;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // Form1
             // 

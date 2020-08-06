@@ -55,6 +55,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Instruções.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instruções.Designer.cs">
+      <DependentUpon>Instruções.cs</DependentUpon>
+    </Compile>
     <Compile Include="Maior.cs" />
     <Compile Include="Medio.cs" />
     <Compile Include="Menor.cs" />
@@ -66,6 +72,9 @@
     <Compile Include="Torres.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instruções.resx">
+      <DependentUpon>Instruções.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

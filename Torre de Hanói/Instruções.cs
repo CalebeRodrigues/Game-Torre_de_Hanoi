@@ -10,22 +10,21 @@ using System.Windows.Forms;
 
 namespace Torre_de_Hanói
 {
-    public partial class Form1 : Form
+    public partial class Instruções : Form
     {
-        public Form1()
+        public Instruções()
         {
             InitializeComponent();
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
 
-        private void btnStart_Click(object sender, EventArgs e)
+        private void btnSair_Click(object sender, EventArgs e)
         {
-            Instruções instrucoes = new Instruções();
-            instrucoes.ShowDialog();
+            this.Close();
         }
     }
 }
