@@ -145,6 +145,7 @@
             this.btnNext.TabIndex = 8;
             this.btnNext.Text = "Próximo";
             this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // Instruções
             // 

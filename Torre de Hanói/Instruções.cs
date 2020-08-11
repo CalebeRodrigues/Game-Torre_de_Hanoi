@@ -26,5 +26,10 @@ namespace Torre_de_Hanói
         {
             this.Close();
         }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
