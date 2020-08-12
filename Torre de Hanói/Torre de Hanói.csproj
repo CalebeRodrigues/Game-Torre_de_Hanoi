@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control.cs" />
     <Compile Include="Disco.cs" />
     <Compile Include="DomainExceptions.cs" />
     <Compile Include="EndGame.cs" />

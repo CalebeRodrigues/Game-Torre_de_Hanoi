@@ -29,6 +29,7 @@ namespace Torre_de_Hanói
             Jogo jogo = new Jogo();
             Hide();
             jogo.ShowDialog();
+            Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)

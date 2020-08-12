@@ -16,5 +16,14 @@ namespace Torre_de_Hanói
         {
             InitializeComponent();
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            var resposta = MessageBox.Show("Os dados atuais serão perdidos! Desejas abandonar a partida mesmo assim", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if(resposta.ToString() == "Yes")
+            {
+                Close();
+            }
+        }
     }
 }

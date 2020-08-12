@@ -20,7 +20,7 @@ namespace Torre_de_Hanói
 
         }
 
-        public Torres(int IDTorre, Disco disco)
+        public Torres(Torres torres, int IDTorre, Disco disco)
         {
             this.IDTorre = IDTorre;
             this.disco = disco;
